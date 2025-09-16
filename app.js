@@ -25,7 +25,7 @@ async function exibirImagens() {
 
     const listaImg = await buscarImagens(raca)
 
-    listaImg.slice(0,15).forEach(url => {
+    listaImg.forEach(url => {
         const img = document.createElement("img")
         img.src = url
         galeria.appendChild(img)
